@@ -1,1 +1,1 @@
-# webdev-js-handson
+# webdev-js-hands-on
