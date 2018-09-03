@@ -14,6 +14,10 @@
         #loading, #results {
             display: none;
         }
+        .control-label {
+            width: 140px;
+            text-align: left;
+        }
     </style>
   </head>
   <body class="bg-dark">
@@ -35,8 +39,11 @@
                                 <input type="number" id="interest" class="form-control" placeholder="Interest">
                             </div>
                         </div>
-                        <div class="form-group">                               
-                            <input type="number" id="years" class="form-control" placeholder="Years to repay">
+                        <div class="form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Yr</span>                             
+                                <input type="number" id="years" class="form-control" placeholder="Years to repay">
+                            </div>
                         </div>
                         <div class="form-group">
                             <input type="submit" value="Calculate" class="btn btn-dark btn-block">
@@ -51,17 +58,26 @@
                         <h5>RESULTS</h5>
                         <div class="form-group">
                             <div class="input-group">
-                                <input type="number" id="monthly-payment" class="form-control" placeholder="Monthly Payment" disabled>
+                                <label for="monthly-payment" class="control-label pt-1">Monthly Payment:</label>
+                                <div>
+                                    <input type="number" step="0.01" id="monthly-payment" class="form-control" placeholder="Monthly Payment" disabled>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="input-group">
-                                <input type="number" id="total-payment" class="form-control" placeholder="Total Payment" disabled>
+                                <label for="monthly-payment" class="control-label pt-1">Total Payment:</label>
+                                <div>
+                                    <input type="number" step="0.01" id="total-payment" class="form-control" placeholder="Total Payment" disabled>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="input-group">
-                                <input type="number" id="total-interest" class="form-control" placeholder="Total Interest" disabled>
+                                <label for="monthly-payment" class="control-label pt-1">Total Interest:</label>
+                                <div>
+                                    <input type="number" step="0.01" id="total-interest" class="form-control" placeholder="Total Interest" disabled>
+                                </div>
                             </div>
                         </div>
                     </div>
